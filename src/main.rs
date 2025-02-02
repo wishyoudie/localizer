@@ -17,7 +17,7 @@ fn list_files_in_path(path: &std::path::Path) {
             }
         }
         Err(_) => {
-            println!("{}", "Unable to read directory".red());
+            eprintln!("{}", "Unable to read directory".red());
         }
     };
 }
