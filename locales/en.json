@@ -1,0 +1,214 @@
+{
+  "asd": "asd",
+  "error": {
+    "description": "Looks like something broke... We're already working on it, so you just reload the app for now.",
+    "fetch_error_description": "Could not load data. Please, check your internet connection.",
+    "title": "Oops!",
+    "warning": "value"
+  },
+  "login": {
+    "description": "You did not pass validation. Perhaps this is because you opened the store not from Telegram.",
+    "title": "Who Are You?"
+  },
+  "marketplace": {
+    "home": {
+      "geolocation": {
+        "findnear": "Find nearest",
+        "km": "km"
+      },
+      "modal": {
+        "apply": "Apply filters",
+        "categories": {
+          "header": "Categories"
+        },
+        "range": {
+          "addressHeader": "Address",
+          "allowGeo": "Allow Access",
+          "geoNotAllowed": "We need your location to filter shops by distance",
+          "header": "Maximum Range",
+          "loading": "Searching...",
+          "notselected": "Select range to limit max distance to shop",
+          "switch": "Filter by location",
+          "unlimited": "None"
+        },
+        "title": "Filter Shops"
+      }
+    },
+    "reviews": {
+      "anonymous": {
+        "name": "Anonymous"
+      },
+      "empty": {
+        "description": "This shop hasn't received any reviews yet.",
+        "title": "Nothing Here"
+      },
+      "post": {
+        "images": {
+          "attach": "Attach Images",
+          "header": "Images"
+        },
+        "isAnonymous": "Hide my name",
+        "mainButtonText": "Post Review",
+        "score": "Score",
+        "text": {
+          "header": "Text",
+          "placeholder": "Loved it! Will totally order again!"
+        },
+        "title": "Review"
+      },
+      "title": "Reviews"
+    },
+    "search": {
+      "cancel": "Cancel",
+      "notfound": {
+        "button": "Change options",
+        "description": "Nothing found for your query.",
+        "title": "No Results"
+      },
+      "placeholder": "Search products"
+    }
+  },
+  "notfound": {
+    "description": "How did you even get here? You'd better go buy something!",
+    "title": "Page Not Found"
+  },
+  "shop": {
+    "addresses": {
+      "add": "Add",
+      "cancel": "Cancel",
+      "close": "Close",
+      "current": "Use Current",
+      "deleteConfirm": "Are you sure you want to delete the address?",
+      "description": "Add your addresses here for quick access during checkout.",
+      "empty": {
+        "description": "Click the button below to add an address for quick access",
+        "header": "Nothing Here"
+      },
+      "emptyError": "Enter an address",
+      "header": "Your Addresses",
+      "onAddSuccess": "Address added",
+      "onDeleteSuccess": "Address deleted",
+      "onError": "Error",
+      "placeholder": "Street, Avenue..."
+    },
+    "cart": {
+      "empty": {
+        "alert": "Are you sure you want to clear the cart?",
+        "description": "Add some items and come back!",
+        "error": "Failed to clear the cart",
+        "title": "Cart is Empty"
+      },
+      "error": "Error",
+      "header": "Cart",
+      "invoice": "Pay"
+    },
+    "catalogue": {
+      "cart": "Cart",
+      "load_more": "Load more"
+    },
+    "clipboard": "Product link added to clipboard",
+    "header": {
+      "catalogue": "Catalog",
+      "contacts": "Contact",
+      "info": "Info",
+      "orders": "My Orders"
+    },
+    "invoice": {
+      "address": {
+        "header": "Address",
+        "unsatisfied": "Please fill in the address field."
+      },
+      "comment": {
+        "description": "You can add a comment to your order",
+        "header": "Comment",
+        "placeholder": "Type your message here"
+      },
+      "coupon": {
+        "applied": "Promocode applied",
+        "apply": "Apply",
+        "header": "Promocode",
+        "initial": "I have a promocode",
+        "placeholder": "Enter promocode here"
+      },
+      "delivery": {
+        "title": "Delivery"
+      },
+      "extra_fields": {
+        "unsatisfied": "Please fill in the required additional fields."
+      },
+      "payment": {
+        "choose": "Select",
+        "price_summary": {
+          "cart": "Products",
+          "coupon": "Coupon Discount",
+          "delivery": "Delivery",
+          "free": "Free",
+          "header": "Price Summary",
+          "total": "Total"
+        },
+        "title": "Payment Method",
+        "unsatisfied": "Please choose payment method"
+      },
+      "phone": {
+        "access_denied": "Specify your phone number above. Without it, the order cannot be created.",
+        "description": "We couldn't identify your username. Please enter your phone number for order identification.",
+        "header": "Phone Number",
+        "unsatisfied": "Please fill in the phone number field."
+      },
+      "ready": "Finish",
+      "title": "Checkout"
+    },
+    "order_created": {
+      "description": "Your order is being processed. Check your messages for details.",
+      "goto": "View Order",
+      "title": "Thank You for Your Purchase!"
+    },
+    "orders": {
+      "date": "Delivery date",
+      "empty": {
+        "button": "Let's go shopping!",
+        "description": "Looks like you haven't placed any orders yet.",
+        "header": "Nothing Here"
+      },
+      "header": "Your Orders",
+      "item": {
+        "lib": {
+          "comment": "Comment",
+          "deliveryAddress": "Address",
+          "deliveryDate": "Date",
+          "deliveryDetailsHeader": "Delivery details",
+          "discount": "Discount",
+          "headline": "Order ",
+          "moreButtonLabel": "More",
+          "orderItemsHeader": "Order contents",
+          "payment": "Payment Method",
+          "piece": "p",
+          "products": [
+            "product + delivery",
+            "products + delivery",
+            "products + delivery"
+          ],
+          "total": "Total"
+        },
+        "repeatConfirm": "Repeat order?",
+        "repeatError": "Error repeating order"
+      }
+    },
+    "product": {
+      "add": "Add to Cart",
+      "add_to_cart": "Get",
+      "delete_error": "Failed to remove item from cart",
+      "descriptionHeader": "About Product",
+      "error": "Error",
+      "extra_options_unsatisfied": "Select required options",
+      "go_to_cart": "Go to Cart",
+      "less": "Hide",
+      "more": "More",
+      "open_booking": "Booking",
+      "out_of_stock": "This product is out of stock"
+    },
+    "shareTextMid": " for ",
+    "shareTextStart": " in Shop ",
+    "shareTitle": "Share "
+  }
+}
