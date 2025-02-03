@@ -6,6 +6,7 @@
     "title": "Oops!",
     "warning": "value"
   },
+  "kasd": "asd",
   "login": {
     "description": "You did not pass validation. Perhaps this is because you opened the store not from Telegram.",
     "title": "Who Are You?"

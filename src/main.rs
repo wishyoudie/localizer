@@ -99,24 +99,80 @@ fn create_file_handler(key: &String, value: &String) -> impl Fn(&std::path::Path
     }
 }
 
+fn print_usage() {
+    println!("Usage: localizer [OPTIONS]");
+    println!("Options:");
+    println!("  --path    Relative path to locales folder");
+    println!("  --key     JSON key to update (e.g., 'common.greeting')");
+    println!("  --value   Value to set for the key");
+    println!("  --help    Print this help message");
+}
+
 fn main() {
+    let args: Vec<String> = std::env::args().collect();
     let mut path = std::env::current_dir().unwrap();
     let mut locales_path = String::new();
-    let mut key: String = String::new();
-    let mut value: String = String::new();
+    let mut key = String::new();
+    let mut value = String::new();
+    let mut i = 1;
 
-    load_from_stdin(
-        &mut locales_path,
-        Some("path to your locales folder"),
-        Some(&(path.to_str().unwrap().to_string() + "/")),
-    );
+    // Parse command line arguments
+    while i < args.len() {
+        match args[i].as_str() {
+            "--help" => {
+                print_usage();
+                return;
+            }
+            "--path" => {
+                if i + 1 < args.len() {
+                    locales_path = args[i + 1].clone();
+                    i += 2;
+                    continue;
+                }
+            }
+            "--key" => {
+                if i + 1 < args.len() {
+                    key = args[i + 1].clone();
+                    i += 2;
+                    continue;
+                }
+            }
+            "--value" => {
+                if i + 1 < args.len() {
+                    value = args[i + 1].clone();
+                    i += 2;
+                    continue;
+                }
+            }
+            _ => {
+                println!("Unknown argument: {}", args[i]);
+                print_usage();
+                std::process::exit(1);
+            }
+        }
+        i += 1;
+    }
 
-    path = path.join(locales_path.trim());
+    if !locales_path.is_empty() {
+        path = path.join(locales_path.trim());
+        println!("Using path: {}", path.display());
+    } else {
+        load_from_stdin(
+            &mut locales_path,
+            Some("path to your locales folder"),
+            Some(&(path.to_str().unwrap().to_string() + "/")),
+        );
+        path = path.join(locales_path.trim());
+    }
 
-    load_from_stdin(&mut key, None, Some(&("JSON Key: ".to_string())));
-    load_from_stdin(&mut value, None, Some(&("Value: ".to_string())));
+    if key.is_empty() {
+        load_from_stdin(&mut key, None, Some(&("JSON Key: ".to_string())));
+    }
+
+    if value.is_empty() {
+        load_from_stdin(&mut value, None, Some(&("Value: ".to_string())));
+    }
 
     let file_handler = create_file_handler(&key, &value);
-
     traverse_directory(&path, &file_handler);
 }
