@@ -81,6 +81,7 @@ jobs:
         shell: bash
         run: |
           cd npm
+          npm login
           # set the binary name
           bin="sync-locale"
           # derive the OS and architecture from the build matrix name
@@ -134,6 +135,7 @@ jobs:
         run: |
           cd npm/app
           npm install
+          npm login
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
