@@ -1,5 +1,5 @@
 [package]
-name = "app"
+name = "sync-locale"
 version = "0.1.0"
 edition = "2021"
 repository = "https://github.com/wishyoudie/localizer"

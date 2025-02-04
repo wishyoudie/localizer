@@ -100,7 +100,7 @@ fn create_file_handler(key: &String, value: &String) -> impl Fn(&std::path::Path
 }
 
 fn print_usage() {
-    println!("Usage: app [OPTIONS]");
+    println!("Usage: sync-locale [OPTIONS]");
     println!("Options:");
     println!("  --path    Relative path to locales folder");
     println!("  --key     JSON key to update (e.g., 'common.greeting')");

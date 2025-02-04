@@ -3,15 +3,6 @@
 version = 4
 
 [[package]]
-name = "app"
-version = "0.1.0"
-dependencies = [
- "colored",
- "serde",
- "serde_json",
-]
-
-[[package]]
 name = "colored"
 version = "3.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -97,6 +88,15 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-ident",
+]
+
+[[package]]
+name = "sync-locale"
+version = "0.1.0"
+dependencies = [
+ "colored",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]
