@@ -11,6 +11,7 @@
   },
   "author": "Vladimir Ilyin <ilyinvp@yandex.ru>",
   "homepage": "https://github.com/wishyoudie/localizer#readme",
+  "license": "MIT",
   "dependencies": {
     "child_process": "^1.0.2"
   },
