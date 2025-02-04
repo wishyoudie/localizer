@@ -1,0 +1,25 @@
+{
+  "name": "sync-locale",
+  "version": "0.1.0",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wishyoudie/localizer"
+  },
+  "author": "Vladimir Ilyin <ilyinvp@yandex.ru>",
+  "homepage": "https://github.com/wishyoudie/localizer#readme",
+  "dependencies": {
+    "child_process": "^1.0.2"
+  },
+  "optionalDependencies": {
+    "app-linux-x64": "0.1.0",
+    "app-linux-arm64": "0.1.0",
+    "app-darwin-x64": "0.1.0",
+    "app-darwin-arm64": "0.1.0",
+    "app-windows-x64": "0.1.0",
+    "app-windows-arm64": "0.1.0"
+  }
+}
